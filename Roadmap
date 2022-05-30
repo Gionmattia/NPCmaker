@@ -1,0 +1,4 @@
+1) Transform the Python code into a working nextflow process
+2) try to run a pipeline made by a single process and see if it works (?)
+3) Alternatively, come up with another small program and convert it to process
+4) try to run the pipeline with two processes.
