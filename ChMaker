@@ -1,0 +1,12 @@
+# NPC creator 
+import random
+races =["Dragonborn", "Elf", "Dwarf", "Human", "Tabaxi", "Aaracokra"]
+classes = ["Rogue", "Wizard", "Paladin", "Monk", "Bard", "Artificer"]
+trait = ["Fierce", "Horny", "Optmistic", "Pessimistic"]
+law = ["L", "N", "C"]
+good = ["G", "N", "E"]
+query1= input("Starting the program? (y/n) ")
+if query1 != "n":
+    alignment = random.choice(law)+random.choice(good)
+    output = alignment + " " +random.choice(trait) + " " + random.choice(races)+ " " + random.choice(classes)
+    print(output)
