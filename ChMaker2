@@ -8,5 +8,14 @@ good = ["G", "N", "E"]
 alignment = random.choice(law)+random.choice(good)
 if alignment == "NN":
     alignment = "TN"
-output = alignment + " " +random.choice(trait) + " " + random.choice(races)+ " " + random.choice(classes)
-print(output)
+a = alignment + " " +random.choice(trait) + " " + random.choice(races)+ " " + random.choice(classes)
+# print(a)
+
+
+# This is the second script, that takes the input and returns the output
+best_stats ={"Rogue":"Dexterity", "Wizard":"Intelligence", "Paladin": "Strength", "Monk": "Wisdom", "Bard": "Charisma", "Artificer": "Constitution"}
+output_as_list = a.split(" ")
+b = best_stats[output_as_list[-1]]
+result = a + "\n" + "Suggested stat: " + b
+
+print(result)
