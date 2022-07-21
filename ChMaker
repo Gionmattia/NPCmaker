@@ -10,3 +10,5 @@ if query1 != "n":
     alignment = random.choice(law)+random.choice(good)
     output = alignment + " " +random.choice(trait) + " " + random.choice(races)+ " " + random.choice(classes)
     print(output)
+
+# AND I SAID HEYHEYHEYHEY
